@@ -22,7 +22,7 @@ $iniciar.addEventListener('click',()=>{
     completados=0;
     seg=0,min=0;
     $cronometro.innerHTML='00:00';
-    fetch('https://digimon-api.herokuapp.com/api/digimon')
+    fetch('https://digimon-api.vercel.app/api/digimon')
     .then(res=>res.json())
     .then((json)=>{
         for (let i=0;i<12;i++){
